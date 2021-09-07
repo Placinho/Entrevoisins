@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="NamespaceTypo">
+    <string name="app_name">Entrevoisins</string>
+    <string name="tab_neighbour_title">My neighbours</string>
+    <string name="tab_favorites_title">Favorites</string>
+    <string name="activity_new_neighbour">New neighbour</string>
+    <string name="image" tools:ignore="ExtraTranslation">New neighbour</string>
+    <string name="Detail">A propos de moi</string>
+    <string name="PhoneNumber">PhoneNumber</string>
+    <string name="Coordonnées">Coordonnées</string>
+</resources>
