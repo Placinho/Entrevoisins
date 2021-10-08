@@ -3,7 +3,10 @@ package com.openclassrooms.entrevoisins.ui.neighbour_list;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -36,7 +39,7 @@ public class NeighbourDetail extends AppCompatActivity {
     @BindView(R.id.nSocialNetworks)
     TextView nSocialNetworks;
     @BindView(R.id.activity_favorite_greeting1_txt)
-    TextView activity_favorite_greeting1_txt;
+    CardView activity_favorite_greeting1_txt;
     @BindView(R.id.activity_favorite_greeting2_txt)
     TextView activity_favorite_greeting2_txt;
     @BindView(R.id.fav_btn)
@@ -83,7 +86,7 @@ public class NeighbourDetail extends AppCompatActivity {
                 if (favorite) {
                     favorite = false;
                     fav_btn.setImageResource(R.drawable.ic_star_border_white_24dp);
-                    mApiService.deleteNeighbour(cloneNeighbour);
+                    mApiService.removeFavorite(cloneNeighbour);
                 } else {
                     favorite = true;
                     fav_btn.setImageResource(R.drawable.ic_star_white_24dp);
@@ -91,6 +94,16 @@ public class NeighbourDetail extends AppCompatActivity {
                 }
             }
         });
+
+        ((ImageButton)findViewById(R.id.previousButton))
+                .setOnClickListener(new View.OnClickListener()
+                                    {
+                                        public void onClick(View v)
+                                        {
+                                            NeighbourDetail.this.finish();
+                                        }
+                                    }
+                );
 
 
 

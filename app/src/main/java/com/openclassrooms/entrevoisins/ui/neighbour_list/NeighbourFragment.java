@@ -56,7 +56,7 @@ public class NeighbourFragment extends Fragment {
 
     private void initList() {
         mNeighbours = mApiService.getNeighbours();
-        mRecyclerView.setAdapter(new MyNeighbourRecyclerViewAdapter(mNeighbours));
+        mRecyclerView.setAdapter(new MyNeighbourRecyclerViewAdapter(mNeighbours, false));
     }
 
     @Override
@@ -87,7 +87,7 @@ public class NeighbourFragment extends Fragment {
     @Subscribe
     public void onDetail(DetailNeighbourEvent event) {
         Intent intent = new Intent(getContext(), NeighbourDetail.class);
-        intent.putExtra ("Michael", event.neighbour);
+        intent.putExtra ("Vincent", event.neighbour);
         startActivity(intent);
     }
 }

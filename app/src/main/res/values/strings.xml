@@ -7,4 +7,5 @@
     <string name="Detail">A propos de moi</string>
     <string name="PhoneNumber">PhoneNumber</string>
     <string name="Coordonnées">Coordonnées</string>
+    <string name="Button">PreviousButton</string>
 </resources>
