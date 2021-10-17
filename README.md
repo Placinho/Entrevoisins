@@ -11,12 +11,18 @@ Au clic sur un utilisateur, nouvel écran avec :
 ● un bouton d’ajout du voisin à la liste de favoris ; 
 ● un onglet Favoris dans lequel les utilisateurs marqués comme favoris s’affichent.
 
-#telechargement
-https://github.com/Lazdevmob/Entrevoisins-P3.git
+# Créez et exécutez votre application.
 
-#lancement de l'application sur emulateur (API 21minimum)
-a partir de android studio 
-run app Maj+F10
+Pour créer et exécuter votre application, procédez comme suit :
+
+Dans la barre d'outils, sélectionnez votre application dans le menu déroulant des configurations d'exécution.
+Dans le menu déroulant de l'appareil cible, sélectionnez l'appareil sur lequel vous souhaitez exécuter votre application.
+Si aucun périphérique n'est configuré, vous devez soit connecter un périphérique via USB, soit créer un AVD pour utiliser l' émulateur Android .
+
+Cliquez sur Exécuter.
+
+#telechargement
+https://github.com/Placinho/Entrevoisins.git
 
 # android 
     compileSdkVersion 28
